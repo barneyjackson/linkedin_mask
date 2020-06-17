@@ -1,0 +1,16 @@
+{
+    "name": "Mask for LinkedIn Recruiter Lite",
+    "author": "Barney Jackson",
+    "homepage_url": "https://github.com/barneyjackson/linkedin_mask",
+    "version": "1.0",
+    "description": "Hide the pictures and names of candidates from the \"Talent Pool\" search results",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.linkedin.com/recruiter/*"],
+            "js": ["mask.js"]
+        }
+    ],
+    "web_accessible_resources": ["images/*.png"],
+    "manifest_version": 2
+}
